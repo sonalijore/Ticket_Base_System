@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Todo|Update Task</title>
+    </head>
+    <body>
+        <h2>Update Task</h2>
+        <form method="POST" action='/update/{{d.0}}'>
+            <table  border='|' align='center'>
+              
+                <tr>
+                   <td>NAME:</td>
+                    <td><input type="text" name='n' value="{{d.1}}"/></td>
+                </tr>
+                <tr>
+                    <td>AGE:</td>
+                    <td><input type="text" name='a' value="{{d.2}}"/></td>
+                </tr>
+                 <tr>
+                   <td>SOURCE:</td>
+                   <td><input type="text" name='s' value="{{d.3}}"/></td>  
+                </tr>
+                 <tr>
+                    <td>DESTINATION:</td>
+                   <td><input type="text" name='dst' value="{{d.4}}"/></td>  
+                </tr>
+                <tr>
+                    <td>PRICE:</td>
+                   <td><input type="text" name='p' value="{{d.5}}"/></td>  
+                </tr>
+                <tr>
+                    <td><input type="Submit" name='send' value='Update'/></td>
+                </tr>
+            </table>   
+        </form>
+    </body>
+</html>

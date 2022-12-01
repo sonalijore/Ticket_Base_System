@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Todo|Reservation</title>
+    </head>
+    <body>
+        <h2>Reservation Information</h2>
+        <a href="/create">Create Entry</a><br>
+         <table border='' align='center'>
+            <tr>
+                
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>SOURCE</th>
+                <th>DESTINATION</th>
+                <th>PRICE</th>
+                <th>EDIT</th>
+                <th>DELET</th>
+            </tr>
+            {% for x in d %}
+                <tr>
+                    <td>{{x.1}}</td>
+                    <td>{{x.2}}</td>
+                    <td>{{x.3}}</td>
+                    <td>{{x.4}}</td>
+                    <td>{{x.5}}</td>
+                    
+                    <td><a href='edit/{{x.0}}'>Edit</a> </td>
+                    <td><a href='delete/{{x.0}}'>Delete</a></td>
+                </tr>
+            {% endfor %}
+        
+        </table>
+    </body>
+
+</html>
